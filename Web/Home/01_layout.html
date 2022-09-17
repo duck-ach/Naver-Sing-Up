@@ -15,16 +15,57 @@
     </div>
 </header>
 
-<section> <!-- 회원가입블록 -->
+<section class="signupblock"> <!-- 회원가입블록 -->
     <div><strong>아이디</strong></div>
-    <div class="login_box"><input class="id_box" type="text" maxlength="20"></div>
+    <div class="login_box"><input class="input_box" type="text" maxlength="20" name="id" required>@naver.com</div>
 
     <div><strong>비밀번호</strong></div>
+    <div class="login_box"><input class="input_box" type="password" maxlength="22" name="pw" required></div>
     <div><strong>비밀번호 재확인</strong></div>
+    <div class="login_box"><input class="input_box" type="password" maxlength="22" required></div>
+
     <div><strong>이름</strong></div>
-    <div><strong>생년월일</strong></div>
+    <div class="login_box"><input class="input_box" type="text" maxlength="20" name="name" required></div>
+
+    <div><label for=yyyy><strong>생년월일</strong></label></div>
+    <div class="date_login_box">
+        <input class="date_input_box" type="text" min="0" max="9999" name="birth" id="yyyy" placeholder="년(4자)" value="" size="4">
+    </div>
+    <div class="date_login_box">
+        <select name="month" class="date_input_box">
+            <option selected value="월">월</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    </div> 
+    <div class="date_login_box">   
+        <input class="date_input_box" type="text" min="1" max="31" name="day" placeholder="일" value="" size="4">
+    </div>
+
+    <!-- genderText 회색으로 어떻게바꾸는지 모르겠음 -->
     <div><strong>성별</strong></div>
+    <div class="login_box">
+        <select class="input_box" name="gender">
+            <option selected value="성별" class="genderText">성별</option>
+            <option value="남자">남자</option>
+            <option value="여자">여자</option>
+            <option value="선택 안함">선택 안함</option>
+        </select>
+    </div>
+
     <div><strong>본인 확인 이메일</strong></div>
+    <div class="login_box"><input type="email" class="input_box" name="email"></div>
+
     <div><strong>휴대전화</strong></div>
 
 </section>
