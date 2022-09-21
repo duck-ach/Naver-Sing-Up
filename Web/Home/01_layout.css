@@ -49,3 +49,11 @@ body {
 .genderText {
     color: lightslategray;
 }
+
+.button {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(53, 178, 30);
+
+    color: white;
+}
